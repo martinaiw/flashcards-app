@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #1a1a1a; /* Beige background */
+  color: rgba(149, 42, 199, 0.979); /* Indigo text color */
+}
+
+::selection {
+  background-color: #9370db; /* Medium purple */
+  color: white;
+}
+
+.questions {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #d6d6d6; /* Cream background */
+  border-radius: 25px;
+  box-shadow: 0px 0px 143px 30px rgba(149, 42, 199, 0.979);
+  animation: gentleBreathe 5s infinite;
+}
+
+@keyframes gentleBreathe {
+  0%,
+  100% {
+    box-shadow: 0px 0px 143px 30px rgba(149, 42, 199, 0.979);
+  }
+  50% {
+    box-shadow: 0px 0px 180px 40px rgba(149, 42, 199, 0.603);
+  }
+}
+
+.questions h1 {
+  color: #1a1a1a; /* Indigo */
+}
+
+.questions h2 {
+  color: #9370db; /* Medium purple */
+}
+
+.questions button {
+  background-color: #9370db; /* Medium purple */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.questions button:hover {
+  background-color: #6a5acd; /* Slate blue */
+}
+
+.buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+.buttons h3 {
+  color: #d6d6d6; /* Indigo */
+}
+
+.buttons button {
+  background-color: #d6d6d6; /* Cream */
+  color: rgba(72, 22, 95, 0.877); /* Indigo */
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #b1a1ca; /* Beige */
+  border: none;
+}
+
+.buttons button[selected] {
+  background-color: #9370db; /* Medium purple */
+  color: white;
+}
