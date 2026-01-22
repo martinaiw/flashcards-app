@@ -11,7 +11,7 @@ const FileUploader = () => {
   };
 
   const handleUpload = async () => {
-    // We will fill this out later
+    // will fill this out later
   };
 
   return (
