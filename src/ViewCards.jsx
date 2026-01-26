@@ -34,9 +34,7 @@ function ViewCards() {
 	};
 
 	useEffect(() => {
-		const csvPath = `${
-			import.meta.env.BASE_URL
-		}Flashcards.csv?v=${new Date().getTime()}`;
+		const csvPath = `./Flashcards.csv?v=${new Date().getTime()}`;
 		fetch(csvPath)
 			.then((res) => res.text())
 			.then((csvText) => {
